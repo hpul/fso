@@ -1,0 +1,6 @@
+title Create new note in SPA
+note over browser: Text input and save button click
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa { new note }
+note over server: New note saved
+server-->browser: HTTP 201 CREATED { new note }
+note over browser:JS renders new note to page
